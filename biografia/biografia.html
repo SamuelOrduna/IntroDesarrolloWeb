@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Mitnick</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #1f2937;
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+        line-height: 1.2;
+      }
+      p {
+        margin: 0.5rem 0 1rem;
+        line-height: 1.6;
+      }
+
+      #hero {
+        background: #0f2747;
+        color: #fff;
+        padding: 1rem 0;
+      }
+
+      .wrap {
+        width: min(1000px, 92%);
+        margin: 0 auto;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .brand {
+        font-weight: 800;
+        text-decoration: underline;
+      }
+      .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: #0f2747;
+        border: 1px solid #0f2747;
+        padding: 0.35rem 0.6rem;
+        border-radius: 10px;
+      }
+      .nav-link:hover {
+        background: #0f2747;
+        color: #fff;
+      }
+      .ext {
+        color: #7a1ea1;
+        border-color: #7a1ea1;
+      }
+      .ext:hover {
+        background: #7a1ea1;
+        color: #fff;
+      }
+
+      .section {
+        padding: 1rem 0;
+      }
+      .box {
+        background: #fff;
+        border: 2px solid #254c7a;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+      .dot {
+        border-style: dotted;
+        border-color: #7a1ea1;
+      }
+      .center {
+        text-align: center;
+      }
+
+      .img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0.75rem auto;
+        border: 4px solid #0f2747;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      }
+      .muted {
+        color: #6b7280;
+      }
+      .u {
+        text-decoration: underline;
+      }
+
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .stack {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .btn {
+        background: #0f2747;
+        color: #fff;
+        border: 2px solid #0f2747;
+        padding: 0.5rem 0.9rem;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #173a6d;
+      }
+
+      .input {
+        padding: 0.5rem 0.6rem;
+        border: 2px solid #254c7a;
+        border-radius: 8px;
+      }
+      .label {
+        font-weight: 600;
+      }
+
+      .img-drugs {
+        display: none;
+      }
+      .img-smile-400 {
+        display: block;
+      }
+
+      @media (max-width: 700px) {
+        main {
+          background: #e8f2ff;
+        }
+        .two {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 400px) {
+        .img-smile-400 {
+          display: none;
+        }
+      }
+      @media (max-width: 300px) {
+        main {
+          background: #ffedf6;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="hero">
+      <div class="wrap nav">
+        <div class="brand">Kevin Mitnick</div>
+        <nav aria-label="Principal">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#retratro">Retrato</a></li>
+            <li><a class="nav-link" href="#biografia">Biografía</a></li>
+            <li><a class="nav-link" href="#logros">Logros</a></li>
+            <li><a class="nav-link" href="#glosario">Glosario</a></li>
+            <li>
+              <a
+                class="nav-link ext"
+                href="https://es.wikipedia.org/wiki/Kevin_Mitnick"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Wikipedia</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <main class="wrap">
+      <section class="section box center" id="retratro">
+        <h1>¿Te resulta familiar este rostro?</h1>
+        <img
+          src="./KevinMitnick.png"
+          alt="Retrato de Kevin Mitnick mirando a la cámara"
+          width="520"
+          class="img"
+        />
+        <p class="muted">
+          Figura clave de la cultura hacker a finales del siglo XX.
+        </p>
+      </section>
+
+      <section class="section" id="biografia">
+        <div class="two">
+          <article class="box">
+            <h2>Historia de Kevin Mitnick</h2>
+            <p>
+              <span class="u">Kevin David Mitnick</span> (1963–2023), también
+              conocido como “Condor”, fue uno de los
+              <a
+                href="https://www.welivesecurity.com/es/otros-temas/hacker-vs-cracker-entiende-sus-diferencias/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >hackers/crackers</a
+              >
+              y phreakers más famosos del mundo.
+            </p>
+            <p>
+              Nació en California. De niño detectó patrones en boletos de
+              autobús y viajó gratis, mostrando ingenio y uso temprano de
+              ingeniería social.
+            </p>
+            <p>
+              A los 16 años se infiltró en sistemas de su escuela. Antes de
+              cumplir 18 accedió a datos de <strong>COSMOS</strong> (telefonía)
+              y realizó llamadas sin costo aprovechando vulnerabilidades.
+            </p>
+            <p>
+              Fue sentenciado a 3 meses de reclusión y 3 años de libertad
+              condicional.
+            </p>
+          </article>
+
+          <article class="box dot">
+            <h2>Después de salir de la cárcel</h2>
+            <p>
+              Ingresó ilegalmente a <strong>ARPANET</strong> y volvió a ser
+              arrestado. Más tarde reincidió en varias compañías de telefonía.
+            </p>
+            <p>
+              El <strong>FBI</strong> lo detuvo; recibió una pena menor a un año
+              de cárcel.
+            </p>
+            <img
+              src="./drogas.png"
+              alt="Ilustración conceptual de adicción a la tecnología"
+              width="520"
+              class="img img-drugs"
+            />
+            <img
+              src="./kevin-smile.png"
+              alt="Kevin Mitnick sonriendo"
+              width="520"
+              class="img img-smile-400"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="logros">
+        <div class="two">
+          <div class="box">
+            <h2>Logros y publicaciones</h2>
+            <ul>
+              <li>Autor de <em>Ghost in the Wires</em>.</li>
+              <li>Consultor de ciberseguridad.</li>
+              <li>
+                Coautor de <em>The Art of Deception</em> y
+                <em>The Art of Intrusion</em>.
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Hitos cronológicos</h3>
+            <ol>
+              <li>Adolescencia: intrusiones y phreaking.</li>
+              <li>1980–1990: casos de alto perfil.</li>
+              <li>2000s: consultoría y libros.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section box" id="glosario" aria-labelledby="nota">
+        <h2 id="nota">Glosario y buscador</h2>
+        <p>
+          Hay palabras poco comunes a lo largo del texto; si no entiendes
+          alguna, búscala en Google.
+        </p>
+        <form class="stack" action="https://www.google.com/search" method="get">
+          <label class="label" for="q">Buscar palabra desconocida:</label>
+          <input
+            class="input"
+            id="q"
+            name="q"
+            type="search"
+            placeholder="Ej.: phreaker"
+          />
+          <button class="btn" type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <div class="box">
+          <h3>Índice</h3>
+          <ul>
+            <li><a class="nav-link" href="#retratro">Retrato</a></li>
+            <li><a class="nav-link" href="#biografia">Biografía</a></li>
+            <li><a class="nav-link" href="#logros">Logros</a></li>
+            <li><a class="nav-link" href="#glosario">Glosario</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="section box">
+        <h3>Enlaces recomendados</h3>
+        <ul>
+          <li>
+            <a
+              class="nav-link ext"
+              href="https://www.mitnicksecurity.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sitio profesional</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link ext"
+              href="https://www.youtube.com/results?search_query=Kevin+Mitnick"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Entrevistas</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer class="wrap section">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#hero">Arriba</a></li>
+        <li>
+          <a
+            class="nav-link ext"
+            href="https://www.goodreads.com/book/show/10256723-ghost-in-the-wires"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Libro</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link ext"
+            href="https://archive.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Archivo</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
