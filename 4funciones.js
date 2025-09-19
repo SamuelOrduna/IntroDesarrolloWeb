@@ -1,11 +1,11 @@
-// Dos funciones lógicas:
-/**
- * Multiplicar
- * Elevar al cuadrado
- */
-
+// Multiplicar (forma clásica y flecha)
 function multiplicar(a,b){
     return a*b;
 }
+const multiplicarEnFlecha = (a,b) => a*b; 
 
-const elevarAlCuadrado = a => a * a;
+// Elevar al cuadrado (forma clásica y flecha)
+function elevarAlCuadrado(a){
+    return a*a;
+}
+const elevarAlCuadradoEnFlecha = a => a * a;
