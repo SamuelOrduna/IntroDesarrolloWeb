@@ -1,4 +1,4 @@
-# sessionStorage (versión simple) — vs localStorage
+# sessionStorage — vs localStorage
 
 ## ¿Qué es `sessionStorage`?
 `window.sessionStorage` es un almacenamiento **clave–valor** (tipo `Storage`) que:
