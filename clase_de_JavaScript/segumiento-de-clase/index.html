@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap demo</title>
+    <!--Import del archivo css necesario para Bootstrap v5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-5">
+    <h1 id="titulo" class="pb-3">Hello, world!</h1>
+
+    <!--****************************************-->
+    <!--Primera parte: Cómo usar el DOM-->
+    <!--****************************************-->
+    <!--  
+    <div id="parent-id">
+      <p>hello word1</p>
+      <p id="test1">hello world2</p>
+      <p>hello world3</p>
+      <p>hello world4</p>
+    </div> -->
+
+    <!--****************************************-->
+    <!--Segunda parte: Cómo usar onClick(function) y addEventListener(event,function)-->
+    <!--****************************************-->
+
+    <button id="btn1" onClick="saluda()" class="mb-5">Saludar</button>
+    <button id="btn2" class="mb-5">Saludar con event listener</button>
+
+    <!--****************************************-->
+    <!--Tercera parte: -->
+    <!--****************************************-->
+    <form class="" id="select-info" onchange="imprimirValor(this.value)">
+      <select id="select-sexo">
+        <option selected>Open this select menu</option>
+        <option value="m">Male</option>
+        <option value="f">Femaler</option>
+      </select>
+    </form>
+
+    <!--****************************************-->
+    <!--Cuarta parte: Formulario con JavaScript-->
+    <!--****************************************-->
+    <form id="formulario">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p id="saludo"></p>
+
+    <!--************************************************* JAVASCRIPT ***************************************************-->
+    <!--****************************************************************************************************************-->
+    <!--****************************************************************************************************************-->
+
+    <!--*************************************************-->
+    <!--Script personalizado (Primera parte: Como usar el DOM)-->
+    <!--*************************************************-->
+    <!--<script>
+        console.log("Hola");
+        const parentDOM = document.getElementById("parent-id");
+        console.log(parentDOM);
+        const test1 = document.getElementById("test1");
+        console.log(test1);
+    </script> -->
+
+    <!--*************************************************-->
+    <!--Script personalizado (Segunda parte: Cómo usar onClick y addEventListener)-->
+    <!--*************************************************-->
+    <script>
+      function saluda() {
+        console.log("Hola!!!!");
+        alert("Hola");
+        console.log("Qué tal?");
+      }
+
+      document.getElementById("btn2").addEventListener("click", saluda);
+    </script>
+
+    <!--*************************************************-->
+    <!--Script personalizado (Tercera parte: Cómo usar onchange() -->
+    <!--*************************************************-->
+    <script>
+      function imprimirValor(valor) {
+        console.log(valor);
+      }
+      const selectorSexo = document.getElementById("select-sexo");
+      selectorSexo.addEventListener("change", function () {
+        // acá la lógica...
+      });
+    </script>
+
+    <!--*************************************************-->
+    <!--Script personalizado (Cuarta parte: Formulario con JS -->
+    <!--*************************************************-->
+    <script>
+      function validar(e) {
+        e.preventDefault();
+        alert("Validando...");
+        const email = getElementById("exampleInputEmail1").value;
+        const passwd = getElementById("exampleInputPassword1").value;
+        console.log(email);
+        console.log(passwd);    
+        
+        }
+      const form = document.getElementById("formulario");
+      form.addEventListener("submit",validar);
+      
+
+    </script>
+
+    <!--Boostrap JS v5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
