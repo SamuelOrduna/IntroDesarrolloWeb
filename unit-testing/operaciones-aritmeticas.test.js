@@ -48,3 +48,12 @@ test("Debe de lanzar el default de operar",()=>{
         expect(e.message).toBe("Operación no válida");
     }
 });
+
+// Pruebas de la tarea [uso de .toThrow()]:
+test("Debe lanzar un error al dividir entre cero", () => {
+  expect(() => dividir(10, 0)).toThrow("No se puede dividir entre cero :(");
+});
+
+test("Debe lanzar un error si la operación no existe", () => {
+  expect(() => operar(5, 3, "elevar")).toThrow("Operación no válida");
+});
